@@ -1,0 +1,184 @@
+:root{
+    --dark-blue:#081b29;
+    --navy-blue:#112e42 ;
+    --green-colot: rgb(35, 204, 187);
+  }
+
+.skill-container{
+    background-color: var(--navy-blue) ;
+   
+}
+
+.skill-container .skill-title-container{
+  width: 500px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
+.skill-container .skill-title div{
+border: 1px solid var(--green-colot) ;
+color: white;
+padding: 20px;
+width: 200px;
+text-align: center;
+border-radius: 5px;
+height: 75px;
+cursor: pointer;
+font-weight: bold;
+font-size: 24px;
+}
+
+
+.skill-container .skill-title div:hover{
+background-color: var(--green-colot);
+box-shadow: inset 0px 0px 16px 5px black;
+
+}
+
+ .skill-container .skill-title .active{
+  background-color: var(--green-colot);
+  box-shadow: inset 0px 0px 16px 5px black;
+  } 
+
+.skill-container .skill-rate{
+  border-radius: 10px;
+  width: 350px;
+  border: 1px solid var(--green-colot);
+  height: 400px;
+  /* display: flex;
+  justify-content: center;
+  flex-direction: column; */
+}
+
+
+@media (max-width:993px){
+  .skill-container .skill-title-container{
+    width: 400px;
+  }
+  .skill-container .skill-title div{
+  
+width: 155px;
+  }
+
+
+  .skill-container .skill-rate{
+width: 300px;
+  }
+}
+@media (max-width:826px){
+  .skill-container .skill-title-container{
+    width: 300px;
+  }
+  .skill-container .skill-title div{
+    font-size: 18px;
+width: 125px;
+  }
+
+
+  .skill-container .skill-rate{
+width: 300px;
+  }
+}
+
+@media (max-width:768px){
+  .skill-container .skill-title-container{
+    width: 150px;
+  }
+  .skill-container .skill-title div{
+    font-size: 18px;
+    width: 125px;
+
+  }
+
+.skill-container{
+  /* justify-content: center; */
+}
+  .skill-container .skill-rate{
+width: 300px;
+  }
+}
+
+
+ @media (max-width:495px){
+  .skill-container {
+
+    
+  }
+  .skill-container .row{
+    display: flex;
+    flex-direction: row;
+  }
+  .skill-container .skill-title-container{
+width: 800px;
+  }
+  .skill-title-container .skill-title{
+    /* margin-left: 20px; */
+    width: 800px;
+  }
+  .skill-container .skill-title div{
+    font-size: 8px;
+    width: 75px;
+    height: 30px;
+    padding: 1px;
+    line-height: 25px;
+  }
+  .skill-container .skill-rate{
+    width: 300px;
+    margin-top: 30px;
+    /* margin-left: 50px; */
+
+      }
+ }
+
+ /* @media (max-width:595px){
+  .skill-container {
+
+    
+  }
+  .skill-container .row{
+display: flex;
+flex-direction: row;
+justify-content: start;
+
+  }
+  .skill-container .skill-title-container{
+    justify-self: start;
+width: 100px;
+  }
+  .skill-title-container .skill-title{
+ 
+  width: 100px;
+  }
+  .skill-container .skill-title div{
+    font-size: 8px;
+    width: 75px;
+    height: 30px;
+    padding: 1px;
+    line-height: 25px;
+  }
+  .skill-container .skill-rate .skill-title-container{
+    width: 200px;
+    margin-top: 30px;
+ 
+
+      }
+ } */
+ @media (max-width:280px){
+  .skill-container .skill-title-container{
+width: 300px;
+
+  }
+  .skill-container .skill-title div{
+    font-size: 8px;
+    width: 50px;
+    height: 30px;
+    padding: 2px;
+    line-height: 23px;
+    
+  }
+  .skill-container .skill-rate{
+    width: 150px;
+    margin-top: 30px;
+      }
+ }

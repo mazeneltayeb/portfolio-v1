@@ -1,0 +1,15 @@
+:root{
+  --dark-blue:#081b29;
+  --navy-blue:#112e42 ;
+  --green-colot: rgb(35, 204, 187);
+}
+
+.App{
+  background-color: var(--navy-blue);
+
+}
+
+::-webkit-scrollbar{
+  width: 0px;
+}
+

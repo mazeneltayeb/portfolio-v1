@@ -1,0 +1,145 @@
+:root{
+    --dark-blue:#081b29;
+    --navy-blue:#112e42 ;
+    --green-color: rgb(35, 204, 187);
+  }
+  .about{
+  height: 100%;
+  
+  }
+.main-about {
+   padding: 25px;
+    background-color: var(--navy-blue);
+    margin-top: 5px;
+    overflow: hidden;
+} 
+.h1-about {
+    color: white;
+margin-top: 24px;
+margin-left: 30px;
+position: relative;
+}
+.h1-about::before{
+    content: "";
+    width: 50px;
+    height: 5px;
+    position: absolute;
+    background-color: var(--green-color);
+    bottom: -11px;
+    left: 12px;
+    border-radius: 10px;
+    animation: move 3s linear  infinite  ;
+}
+@keyframes move {
+    0%{
+        left: 0px;
+    }
+    25%{
+        left: 50px;
+    }
+    50%{
+        left: 110px;
+    }
+    75%{
+      left: 50px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+
+.h1-about span{
+    color: var(--green-color);
+}
+.main-about h2{
+    color: white;
+
+}
+/* start img */
+.main-about  img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.main-about .img-container{
+    position: relative;
+    height: 200px;
+    width: 200px;  
+}
+
+.main-about .img-container::before {
+    content: "";
+    border: solid 1px var(--green-color);
+    height: 103%;
+    width: 104%;
+    position: absolute;
+    border-radius: 50%;
+    top: -3px;
+    left: -4px;
+}
+.main-about .img-container::after {
+    content: "";
+    border-left: solid 1.5px var(--green-color);
+    border-right: solid 1.5px var(--green-color);
+    border-bottom: transparent 1px solid;
+    border-top: transparent 1px solid;
+    height: 219px;
+    width: 219px;
+    position: absolute;
+    border-radius: 50%;
+    top: -8.7px;
+    left: -9.1px;
+    animation: rotate 5s linear infinite;
+}
+   
+
+@keyframes rotate{
+from {
+transform: rotate(0deg);
+    }
+12.5% {
+    transform: rotate(-45deg)
+    }
+ 25% {
+        transform: rotate(-90deg)
+    }
+  37.5%{
+        transform: rotate(-45deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+ 62.5%{
+        transform: rotate(45deg);
+    }
+ 75%{
+        transform: rotate(90deg);
+    }
+  87.5%{
+        transform: rotate(45deg);
+    }
+    to{
+        transform: rotate(-0deg);
+    }
+
+}
+/* end img */
+.main-about p{
+    /* width: 70%; */
+    color: white;
+    opacity: 0.5;
+    padding: 20px;
+}
+
+@media ( min-height:656px) {
+    .about{
+        height: 100vb;
+        
+        }
+}
+@media ( max-width:376px) {
+    .about{
+        height: 100%;
+        
+        }
+}

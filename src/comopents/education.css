@@ -1,0 +1,51 @@
+.education{
+    /* height: 100%; */
+    margin-bottom: 30px;
+    }
+
+.education h1{
+    color: white;
+    margin-bottom: 75px;
+}
+.education h1 span {
+    color:  rgb(35, 204, 187);
+}
+
+.education .row div{
+    color: white;
+    text-align: start;
+    border: 1px solid rgb(35, 204, 187) ;
+    padding-top: 20px;
+    width: 375px;
+}
+/* text */
+.row h6{
+    font-size: 12px;
+}
+.row h3{
+    font-size: 20px;
+}
+.row h4{
+    font-size: 16px;
+}
+.row h5{
+    font-size: 14px;
+}
+.row p{
+    font-size: 12px;
+    opacity: 0.6;
+}
+/* text */
+
+@media ( min-height:668px) {
+    .education{
+        height: 100vh;
+        
+        }
+}
+@media ( max-width:360px) {
+    .education{
+        height: 100%;
+        
+        }
+}
