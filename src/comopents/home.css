@@ -6,48 +6,72 @@
     --navy-blue:#112e42 ;
     --green-colot: rgb(35, 204, 187);
   }
-.home .prsonal-img{
-    text-align: start;
-    position: relative;
-    width: 350px;
-    height: 350px;
-    top: -125px;
-    margin-top: 50px;
-} 
-.home{
-    margin-top: 5rem;
-    height: 100vh;
+  /* .home-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+} */
+.home{
+    /* margin-top: 5rem; */
+    width: 100% !important;
+    height: 100% !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+padding: 20px !important;
 }
+
 /* .resume{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 100%;
 } */
-.home .row{
+.home .prsonal-img{
+    /* text-align: start; */
+    position: relative;
+     z-index: 1;
+    /* width: 350px;
+    height: 350px;
+    top: -125px; */
+    /* margin-top: -275px !important; */
+    /* width: 500px; */
+    display: flex;
     justify-content: center;
-}
- .home .main-img{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 1;
-    border-radius: 50%;
-} 
+    align-items: start;
+    top: -75px;
 
-.home .prsonal-img::before {
-    content: "";
-    background-color: rgb(35, 204, 187);
-    width: 125%;
-    height:114%;
-    position: absolute;
-    clip-path: polygon(100% 0, 100% 100%, 50% 50%, 50% 50%);
-    top: 23px;
-    right: 54px;
-    z-index: 0;
-    transform: rotate(11deg);
 }
+
+
+    .home .prsonal-img::before {
+        content: "";
+        background-color: rgb(35, 204, 187);
+        width: 88%;
+        height: 89%;
+        position: absolute;
+        clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+        z-index: -1;
+        transform: rotate(360deg);
+        top: 60px;
+        right: 29px;
+    }
+
+ .home .main-img{
+    /* width: 80%;
+    height: 80%; */
+    /* position: absolute; */
+    /* position: relative; */
+    /* z-index: 1; */
+    /* border-radius: 50%; */
+    /* margin-top: -125px; */
+    width: 70%;
+} 
+/* .home .main-description{
+    width: 500px;
+} */
+
 
 .home .main-description .card{
 background-color: transparent !important ;
@@ -95,15 +119,92 @@ border: 0 !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 400px;
+
 }
-@media (max-width:767px) {
+/* @media (width:992px) {
+    .home .main-img {
+        width: 80%;
+    }
+    .home .prsonal-img::before {
+        width: 100%;
+        height: 87%;
+        top: 59px;
+        right: -8px;
+    }
+} */
+@media (width<1400px) {
+    .home .prsonal-img::before {
+
+        height: 87%;
+        right: 22px;
+    }
+}
+@media (width<1200px) {
+    .home .prsonal-img::before {
+            height: 84%;
+    }
+}
+ @media (width<992px) {
+    .home .main-img {
+        width: 83%;
+    }
+    .home .prsonal-img::before {
+        width: 100%;
+        height: 80%;
+        top: 15px;
+        right: -8px;
+    }
+    .home .prsonal-img {
+        top: 0px;
+    }
+}
+@media (width<768px) {
+    .home{
+        align-items: start;
+    }
+    .home .prsonal-img::before {
+        width: 99%;
+        height: 97%;
+        top: 15px;
+        right: -8px;
+    }
+    .home .main-img {
+        width: 78%;
+    }
+}
+@media (width<445px) {
+    .home .main-img {
+        width: 73%;
+    }
+    .home .prsonal-img::before {
+        height: 96%;
+        width: 97%;
+        top: 16px;
+        right: -4px;
+    }
+}
+@media (width<401px) {
+    .home .prsonal-img::before {
+        height: 95%;
+        width: 94%;
+        top: 16px;
+        right: 3px;
+    }
+    /* .home .main-img {
+        width: 77%;
+    } */
+}
+
+/* @media (max-width:767px) {
     .home {
         margin-top: 0px !important;
         height: 100%;
     }
-}
-@media (max-width:330px) {
+} */
+@media (max-width:360px) {
+    .home .prsonal-img::before {
+        height: 94%;
+    }
     .social-media{
         width: 225px;
         margin-left:-20px;
@@ -113,3 +214,14 @@ border: 0 !important;
         height: 40px !important;
     }
 }
+@media (max-width:270px) {
+    .social-media{
+        width: 175px;
+        /* margin-left:-25px; */
+    }
+    .social-media a{
+        width: 30px !important;
+        height: 30px !important;
+    }
+}
+

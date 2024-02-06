@@ -5,11 +5,10 @@
 }
 
 .App{
-  background-color: var(--navy-blue);
-
+  width: 100dvw;
+  height: 100dvh;
 }
 
 ::-webkit-scrollbar{
   width: 0px;
 }
-

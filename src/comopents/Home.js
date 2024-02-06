@@ -9,9 +9,9 @@ function Home (){
 // 
 return(
   <>
-   <Container className=" home text-center">
-<Row className="home-row  justify-content-lg-between  justify-content-sm-center">
-    <div className="col-lg-6 col-md-6 col-sm-12 main-description">
+   <Container className="home">
+<Row className="home-row text-center  ">
+    <div className="main-description col-lg-6 col-md-6 col-sm-12">
     <Card>
       <Card.Body>
         <div className="my-name">
@@ -25,14 +25,13 @@ return(
         </Card.Text>
         <div className="card-buttom-container">
         <a className="resume" target="_blank" href="https://drive.google.com/file/d/1SpNT1xJVu_2zPiFbSjqbUr4a3ZcjkAIR/view?usp=drive_link" >Resume <FaArrowUpRightFromSquare /> </a>
-        {/* <Card.Link >Another Link</Card.Link> */}
         </div>
         <SocialMedia/>
       </Card.Body>
       
     </Card>
     </div>
-    <div  className="col-lg-6 col-md-6 col-sm-12 prsonal-img mt-sm-5 ">
+    <div  className="prsonal-img col-lg-6 col-md-6 col-sm-12">
     <Image className="main-img"  src={img}/>
     </div>
 </Row>
