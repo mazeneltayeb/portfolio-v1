@@ -6,6 +6,12 @@
   .main-nav{
   background-color: var(--dark-blue);
   }
+  :root{
+    --dark-blue:#081b29;
+    --navy-blue:#112e42 ;
+    --green-color: rgb(35, 204, 187);
+    box-sizing: border-box;
+  }
 .main-nav a{
     color: white ;
     font-weight: bold;
@@ -13,7 +19,7 @@
     text-decoration: none;
 }
 .main-nav a:focus{
-    color: var(--green-colot);
+    color: white;
 }
 .main-nav .toggler{
     width:35px;
@@ -110,19 +116,34 @@
 }
 
 
-
+.activeLink{
+    color: var(--green-color) !important;
+    position: relative;
+}
+.activeLink::before {
+    content: "";
+    width: 30%;
+    height: 2px;
+    position: absolute;
+    background-color: var(--green-color);
+    bottom: 4px;
+    left: 40px;
+}
 
 /* madia */
-@media (min-width:993px){
+@media (width > 992px){
     .main-nav .toggler{
         display: none;
     }
     .main-nav{
         height: 60px !important;
     }
-
+    .activeLink::before {
+        width: 40% !important;
+        left: 21px !important;
+    }
 }
-@media (max-width:992px){
+@media (width < 992px){
 
     .main-nav{
         height: 60px !important;
@@ -137,32 +158,36 @@
         top: 60px;
         right:  30px;
     }
-    .main-nav ul .active{ 
+    .main-nav ul .active {
+        padding: 22px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         right: 40px;
         top: 10px;
-        width: 200px;
-        height: 250px; 
+        width: 170px;
+        height: 260px;
         position: absolute;
-        background-color: #112e42;
+        background-color: var(--dark-blue);
         border-radius: 10px 0 10px 10px;
-        /* display: none; */
+        border: 1px solid var(--green-color);
     }
     .main-nav ul .active::before {
         content: "";
         border-radius: 50%;
         position: absolute;
         clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-        background-color: #112e42;
+        background-color: var(--dark-blue);
         width: 50px;
         height: 50px;
         top: -21px;
         right: -21px;
         transform: rotate(45deg);
+        border: 1px solid var(--green-color);
     }
     .main-nav  .il-container:not(.active){
         display: none;
     }
 }
 /* madia */
-
 

@@ -12,7 +12,7 @@ export function AllProject(){
       <>
       {projects.map((project)=>{
       return(
-      <Card className='col-lg-4 col-md-6 col-sm-12 '   key={project.id} >
+      <Card className=' col-lg-3 col-md-6 col-sm-6'   key={project.id} >
           <Card.Img variant="top" src={project.image} />
           <Card.Body>
             <Card.Title>{project.title}</Card.Title>
@@ -35,13 +35,14 @@ export function AllProject(){
   
     )
 }
+
 export function Bootestrap(){
   return (
     <>
     {projects.map((project)=>{
       if(project.category === "bootstrap"){
         return(
-    <Card className='col-lg-4 col-md-6 col-sm-12 '   key={project.id} >
+    <Card className='col-lg-3 col-md-6 col-sm-6'   key={project.id} >
     <Card.Img variant="top" src={project.image} />
     <Card.Body>
       <Card.Title>{project.title}</Card.Title>
@@ -66,18 +67,50 @@ export function Bootestrap(){
   )
 }
 
+
 export function Javascript(){
   return (
     <>
     {projects.map((project)=>{
       if(project.category === "javascript"){
         return(
-    <Card className='col-lg-4 col-md-6 col-sm-12 '   key={project.id} >
+    <Card className=' col-lg-3 col-md-6 col-sm-6'   key={project.id} >
     <Card.Img variant="top" src={project.image} />
     <Card.Body>
       <Card.Title>{project.title}</Card.Title>
       <Card.Text>
        {project.description}
+      </Card.Text>
+      <div className='buttom'>
+      <Button href={project.githup}  target="_blank" variant="primary">
+      <FaGithub />
+      </Button>
+      <Button href={project.link}  target="_blank" variant="primary">
+      <BsBrowserChrome />
+      </Button>
+      </div>
+    </Card.Body>
+  </Card>
+        )
+      }
+    })}
+    </>
+
+  )
+}
+
+export function React(){
+  return (
+    <>
+    {projects.map((project)=>{
+      if(project.category === "react"){
+        return(
+    <Card className='col-lg-3 col-md-6 col-sm-6'   key={project.id} >
+    <Card.Img variant="top" src={project.image} />
+    <Card.Body>
+      <Card.Title>{project.title}</Card.Title>
+      <Card.Text>
+      {project.description}
       </Card.Text>
       <div className='buttom'>
       <Button href={project.githup}  target="_blank" variant="primary">

@@ -6,12 +6,7 @@
     --navy-blue:#112e42 ;
     --green-colot: rgb(35, 204, 187);
   }
-  /* .home-row{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-} */
 .home{
     /* margin-top: 5rem; */
     width: 100% !important;
@@ -19,58 +14,68 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-padding: 20px !important;
+    padding: 20px !important;
 }
 
-/* .resume{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 100%;
-} */
 .home .prsonal-img{
-    /* text-align: start; */
-    position: relative;
-     z-index: 1;
-    /* width: 350px;
-    height: 350px;
-    top: -125px; */
-    /* margin-top: -275px !important; */
-    /* width: 500px; */
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    top: -75px;
-
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        box-shadow: inset 20px 20px 20px rgba(0,0,0,0.08), 
+        25px 35px 20px var(--dark-blue), 
+        25px 35px 30px var(--dark-blue),
+        inset -20px -20px 25px var(--green-color);
+        border-radius:82% 18% 76% 24% / 30% 67% 33% 70% ;
+        animation: waterAnimation 2s linear infinite ;
 }
+@keyframes waterAnimation {
+   20%{
+        border-radius:82% 18% 76% 24% / 30% 67% 33% 70% ;
+    }
+    40%{
+        border-radius: 50%;  
+    }
+   60%{
+    border-radius:30% 67% 33% 70% / 82% 18% 76% 24%;
+    }
+    80%{
+        border-radius: 50%;  
+    }
+    100%{
+        border-radius:82% 18% 76% 24% / 30% 67% 33% 70% ;
+    }
+}
+.home .main-img{
+    position: relative;
+    width: 70%;
+    z-index: -1;
+    bottom: 30px;
+} 
 
 
-    .home .prsonal-img::before {
+    /* .home .prsonal-img::before {
         content: "";
-        background-color: rgb(35, 204, 187);
-        width: 88%;
-        height: 89%;
+        background-color: white;
+        background-color: var(--dark-blue);
+        box-shadow: inset -20px 20px 136px 0px rgb(35 204 187);   
+          width: 100%;
+        height: 100%;
         position: absolute;
         clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
         z-index: -1;
         transform: rotate(360deg);
         top: 60px;
         right: 29px;
-    }
+        box-shadow: inset 20px 20px 20px rgba(0,0,0,0.08), 
+                    25px 35px 20px var(--dark-blue), 
+                    25px 35px 30px var(--dark-blue),
+                    inset -20px -20px 25px var(--green-color);
+                    border-radius:   57% 43% 43% 57% / 43% 43% 57% 57%;
+                    transition: 0.5s ease-in-out;
+    } */
 
- .home .main-img{
-    /* width: 80%;
-    height: 80%; */
-    /* position: absolute; */
-    /* position: relative; */
-    /* z-index: 1; */
-    /* border-radius: 50%; */
-    /* margin-top: -125px; */
-    width: 70%;
-} 
-/* .home .main-description{
-    width: 500px;
-} */
+
 
 
 .home .main-description .card{
@@ -121,17 +126,7 @@ border: 0 !important;
     justify-content: center;
 
 }
-/* @media (width:992px) {
-    .home .main-img {
-        width: 80%;
-    }
-    .home .prsonal-img::before {
-        width: 100%;
-        height: 87%;
-        top: 59px;
-        right: -8px;
-    }
-} */
+
 @media (width<1400px) {
     .home .prsonal-img::before {
 
@@ -143,10 +138,15 @@ border: 0 !important;
     .home .prsonal-img::before {
             height: 84%;
     }
+    .home .main-img {
+        
+        bottom: 30px ;
+    }
 }
  @media (width<992px) {
     .home .main-img {
         width: 83%;
+        bottom: -26px ;
     }
     .home .prsonal-img::before {
         width: 100%;
@@ -170,6 +170,7 @@ border: 0 !important;
     }
     .home .main-img {
         width: 78%;
+        bottom: 30px ;
     }
 }
 @media (width<445px) {
@@ -190,17 +191,10 @@ border: 0 !important;
         top: 16px;
         right: 3px;
     }
-    /* .home .main-img {
-        width: 77%;
-    } */
+ 
 }
 
-/* @media (max-width:767px) {
-    .home {
-        margin-top: 0px !important;
-        height: 100%;
-    }
-} */
+
 @media (max-width:360px) {
     .home .prsonal-img::before {
         height: 94%;
@@ -213,11 +207,14 @@ border: 0 !important;
         width: 40px !important;
         height: 40px !important;
     }
+    .home .main-img {
+        bottom: 15px ;
+    }
 }
 @media (max-width:270px) {
     .social-media{
         width: 175px;
-        /* margin-left:-25px; */
+
     }
     .social-media a{
         width: 30px !important;

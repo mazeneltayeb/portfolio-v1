@@ -2,7 +2,7 @@
     --dark-blue:#081b29;
     --navy-blue:#112e42 ;
     --green-color: rgb(35, 204, 187);
-    box-sizing: border-box;
+   
   }
 
   .skill-button-rate-contaier{
@@ -121,5 +121,11 @@ justify-content: space-evenly;
    
   }
 }
+/*  */
+@media (max-height:675px) {
+  .skill-button-rate-contaier {
 
+    height:auto;
+}
+}
 

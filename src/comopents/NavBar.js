@@ -10,11 +10,30 @@ import { Link } from 'react-router-dom';
 
 
 function NavBar(){
+ 
+
+
   const [activeTog,setActiveTog]=useState(false)
   const handledToggler=()=>{
     setActiveTog(!activeTog)
   }
 
+
+
+  function removeTeggoler(){
+    // document.querySelector("ul .active").classList.remove("active")
+    setActiveTog(!activeTog)
+  
+    const navLink = document.querySelectorAll("ul .il-container .nav-link")
+    navLink.forEach((e)=>{
+     e.onclick=function(e){
+       navLink.forEach((el)=>{
+         el.classList.remove("activeLink")
+       })
+   this.classList.add("activeLink")
+     }
+    })
+  }
 
   window.onscroll=function(){
     let scrollerY=document.querySelector(" .scroll-y ")
@@ -35,12 +54,12 @@ scrollerY.style.width= `${scrollTop / heigth * 100 }%`
                 </div>
                 <ul>
                   <Nav className={ `pt-3    ms-lg-auto ${activeTog ? "active":""} il-container`}>
-                    <Link className='nav-link'  to="/" >Home</Link>
-                    <Link className='nav-link'  to="/about">About</Link>
-                    <Link className='nav-link'  to="/education">Education</Link>
-                    <Link className='nav-link'  to="/skills">Skills</Link>
-                    <Link className='nav-link'  to="/project">Project</Link>
-                    <Link className='nav-link'  to="/contact">Contoct</Link>
+                    <Link onClick={removeTeggoler} className='nav-link '  to="/" >Home</Link>
+                    <Link onClick={removeTeggoler} className='nav-link'  to="/about">About</Link>
+                    <Link onClick={removeTeggoler} className='nav-link'  to="/education">Education</Link>
+                    <Link onClick={removeTeggoler} className='nav-link'  to="/skills">Skills</Link>
+                    <Link onClick={removeTeggoler} className='nav-link'  to="/project">Project</Link>
+                    <Link onClick={removeTeggoler} className='nav-link'  to="/contact">Contoct</Link>
                   </Nav>
                 </ul>
               </Container>

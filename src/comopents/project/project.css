@@ -2,18 +2,22 @@
     --dark-blue:#081b29;
     --navy-blue:#112e42 ;
     --green-color: rgb(35, 204, 187);
-    --box-shadow:inset 0px 1px 20px 10px rgb(35 204 187 / 26%)
   }
-  .project-conteiner {
+  /* .project-conteiner {
     height: 100dvh;
     overflow: auto;
     
-    }
-.card-title {
+    } */
+    /* .project-conteiner .project-title{
+        display: flex;
+    justify-content: space-between;
+    width: 60%;
+    } */
+/* .card-title {
     color: var(--green-color) !important;
     
-  }
-.project-conteiner .container{
+  } */
+/* .project-conteiner .container{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -21,23 +25,28 @@
     margin-top: 25px;
     flex-wrap: wrap;
    
-}
-.project-conteiner .product-container{
+} */
+/* .project-conteiner .product-container{
 justify-content: center;
-}
-.project-conteiner .container .card{
+} */
+/* .project-conteiner .container .card{
     max-width: 200px;
     width: 100%;
     border-radius: 10px;
     padding: 15px;
-}
-.project-conteiner .card .card-img-top{
+        border-radius: 10px;
+        padding: 15px;
+} */
+/* .project-conteiner .card .card-img-top{
     width: 130px;
     height: 115px;
    margin: auto;
     border-radius: 10px;
-}
-.project-conteiner .project-title div{
+        height: 175px;
+        border-radius: 10px;
+  
+} */
+/* .project-conteiner .project-title div{
  color:white;
     background-color: var(--dark-blue);
     box-shadow:   inset 0px 1px 20px 10px rgb(35 204 187 / 26%);;
@@ -49,32 +58,33 @@ justify-content: center;
     border-radius: 10px;
     cursor: pointer;
   width: 100px;
-}
+  height: 55px;
+} */
 .project-conteiner .card {
     background-color:var(--green-color);
    background-color: var(--dark-blue);
    box-shadow:   inset 0px 1px 20px 10px rgb(35 204 187 / 26%);
 }
-.product-container .card .card-body{
+/* .product-container .card .card-body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
+} */
 .project-conteiner .card a{
     background-color: var(--dark-blue);
     box-shadow: inset 0px 0px 6px 0px var(--green-colot);
     border: none;
 }
- .product-container p {
+ /* .product-container p {
     font-size: 12px;
     opacity: 1;
     color: white;
     font-weight: bold;
-}
-.project-conteiner .card .buttom{
+} */
+/* .project-conteiner .card .buttom{
 display: flex;
 justify-content: space-evenly;
-}
+} */
 .project-conteiner .card a:hover {
     background-color: var(--green-color);
     color: var(--navy-blue) ;
@@ -84,7 +94,7 @@ justify-content: space-evenly;
     box-shadow: 0px 1px 20px 5px rgb(35 204 187 / 26%) !important; 
     color: var(--navy-blue) !important;
 }
-@media (max-width:992px) {
+/* @media (max-width:992px) {
     .project-conteiner .project-title {
         display: inline-flex;
         flex-direction: row;
@@ -97,7 +107,18 @@ justify-content: space-evenly;
 
 }
 
+@media ( max-height:656px) {
+    .project-conteiner {
+        height: 100vh;
+        }
+}
+@media ( max-width:376px) {
+    .project-conteiner{
+        height: 100%;
+      }
+} */
 
+/*  */
 /* @media (max-width:555px) {
     .project-conteiner{
         height: 100%;
@@ -109,16 +130,6 @@ justify-content: space-evenly;
         }
 } */
 
-@media ( max-height:656px) {
-    .project-conteiner {
-        height: 100vh;
-        }
-}
-@media ( max-width:376px) {
-    .project-conteiner{
-        height: 100%;
-      }
-}
 
 /* @media ( min-height:668px) {
     .education{
@@ -132,3 +143,63 @@ justify-content: space-evenly;
         
         }
 } */
+
+
+
+/* .project-conteiner {
+   padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
+/* 
+.project-conteiner .product-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  
+
+} */
+/* .project-conteiner .product-container .card {
+max-width: 200px;
+height: 300px;
+padding: 10px;
+margin-top: 20px;
+
+} */
+.project-conteiner{
+    padding: 50px;
+    display: flex;
+    flex-direction: column  ;
+    justify-content: space-between;
+  
+}
+.project-conteiner .product-container{
+justify-content: space-around;
+
+}
+.project-conteiner .product-container .card{
+padding: 15px;
+max-width: 250px;
+}
+.project-conteiner .product-container .card img{
+height: 140px;
+
+}
+
+.project-title {
+width: 60%;
+    display: flex;
+    /* justify-content: space-evenly; */
+    position: relative;
+    top: -62px;
+
+}
+.project-title div{
+    border-radius: 50% 50% 50% 50% / 17% 14% 86% 83% ;
+    width: 50px;
+    height: 75px;
+    background-color: var(--green-color);
+}
+

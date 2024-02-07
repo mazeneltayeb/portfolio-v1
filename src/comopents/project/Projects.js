@@ -2,7 +2,7 @@
 import { Container } from "react-bootstrap";
 
 import "./project.css"
-import { AllProject,Bootestrap,Javascript } from "./ProjectCard";
+import { AllProject,Bootestrap,Javascript, React } from "./ProjectCard";
 import { useState } from "react";
 function Project (){
     const [project,setProject]=useState(<AllProject/>)
@@ -17,18 +17,18 @@ function Project (){
     })
 return(
     <div className="project-conteiner">
-    <Container>
+ 
         <div className="project-title">
-        <div onClick={()=>setProject(<AllProject/>)}>All</div>
-            <div onClick={()=>setProject(<AllProject/>)}>HTML,CSS</div>
+        <div className="active-buttom" onClick={()=>setProject(<AllProject/>)}>All</div>
+            {/* <div onClick={()=>setProject(<AllProject/>)}>HTML,CSS</div> */}
             <div onClick={()=>setProject(<Bootestrap/>)}>Bootestrap</div>
             <div onClick={()=>setProject(<Javascript/>)}>JavaScript</div>
-            <div >React</div>
+            <div onClick={()=>setProject(<React/>)}>React</div>
         </div>
-        <div className="product-container row gap-5 ">
+        <div className="product-container row row-gap-3">
        {project}
         </div>
-    </Container>
+   
     </div>
 )
 }
