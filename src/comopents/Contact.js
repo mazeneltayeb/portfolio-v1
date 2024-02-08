@@ -20,44 +20,36 @@ function Contact(){
         });
     };
     return(
-            <div className="contact-container  ">
-                <h1 >Contact</h1>
-                <div className="contact-mazen">
-                    <div className='contact-info'>
-                    <div className='email '>
-                        <div className='icon'>
+            <div className="contact-container container">
+                <div className="contact-mazen row">
+                    <div className='contact-info col-lg-6 col-md-6 col-sm-12'>
+                           <h2 >Contact</h2>
+                    <div className='email'>
+                        <div data="mazen.eltayeb1997@gmail.com"  className='icon'>
                         <MdEmail size='1.5rem' />
-                        </div>
-                        <div className="info">
-                        <h4>Email:</h4>
-                        <h6>mazen.eltayeb1997@gmail.com</h6>
                         </div>
                     </div>
                     <div className='call'>
-                        <div className='icon'>
-                        <IoCall size='1.5rem'  />
+                        <div data="+201002955430" className='icon'>
+                        <IoCall  size='1.5rem'  />
                         </div>
                         <div className="info">
-                        <h4>Call:</h4>
-                        <h6>+201002955430</h6>
                         </div>
                     </div>
                     <div className='location'>
-                        <div className='icon'>
-                        <IoLocationSharp size='1.5rem'  />
-                        </div>
-                        <div className="info">
-                        <h4>Location:</h4>
-                        <h6>Egypt,Ismailia,Elsheikh zayed</h6>
+                        <div data="Egypt,Ismailia,Elsheikh zayed"  className='icon'>
+                        <IoLocationSharp size='1.5rem'/>
                         </div>
                     </div>
                     <div className="map">
                     <iframe
                          src="https://maps.google.com/maps?q=30.611042133054895,%2032.27859403318359&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" />
+                    </div >
+                    <div className="social-media-contact">
+                    <SocialMedia />
                     </div>
-                   <SocialMedia/>
                     </div>
-                    <div className='send-email'>
+                    <div className='send-email col-lg-6 col-md-6 col-sm-12'>
                     <form  ref={form} onSubmit={sendEmail}>
                         <input placeholder="Your Name " type="text" name="user_name"></input>
                         <input placeholder="Your Email " type="email" name="user_email"></input>

@@ -26,7 +26,9 @@ return(
         <div className="card-buttom-container">
         <a className="resume" target="_blank" href="https://drive.google.com/file/d/1SpNT1xJVu_2zPiFbSjqbUr4a3ZcjkAIR/view?usp=drive_link" >Resume <FaArrowUpRightFromSquare /> </a>
         </div>
-        <SocialMedia/>
+          <div className="social-media-home">
+            <SocialMedia />
+          </div>
       </Card.Body>
       
     </Card>
