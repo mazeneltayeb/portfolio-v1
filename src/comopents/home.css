@@ -55,6 +55,7 @@
 
 .social-media-home{
     margin-top: 30px;
+    max-width: 330px;
 }
 
 .home .main-description .card{
@@ -178,9 +179,9 @@ border: 0 !important;
     .home .prsonal-img::before {
         height: 94%;
     }
-    .social-media{
-        width: 225px;
-        margin-left:-20px;
+    .social-media-home{
+        /* width: 225px;
+        margin-left:-20px; */
     }
     .social-media a{
         width: 40px !important;

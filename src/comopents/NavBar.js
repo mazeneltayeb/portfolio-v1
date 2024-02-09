@@ -44,7 +44,7 @@ scrollerY.style.width= `${scrollTop / heigth * 100 }%`
   }
     return(
       <>
-            <Navbar expand="lg" className="main-nav sticky-top relative ">
+            <Navbar expand="lg" className="main-nav sticky-top relative">
               <Container> 
                 <Link className='navbar-brand' to="/" >Mazen.</Link>
                 <div aria-controls="basic-navbar-nav"  className={`toggler ${activeTog ? "active":""}`} onClick={handledToggler}>

@@ -1,11 +1,12 @@
 
-import { Container } from "react-bootstrap";
+
 
 import "./project.css"
 import { AllProject,Bootestrap,Javascript, React } from "./ProjectCard";
 import { useState } from "react";
 function Project (){
     const [project,setProject]=useState(<AllProject/>)
+
     const activeButtom = document.querySelectorAll(".project-title div")
     activeButtom.forEach((e)=>{
         e.onclick=function(){
@@ -15,6 +16,7 @@ function Project (){
             e.classList.add("active-buttom")
         }
     })
+
 return(
     <div className="project-conteiner">
  

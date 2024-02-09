@@ -6,11 +6,14 @@ import emailjs from '@emailjs/browser';
 
 import './contact.css'
 function Contact(){
+  
     const form = useRef();
 
     const sendEmail = (e) => {
-      e.preventDefault();
-  
+        e.preventDefault();
+        //
+        const input = document.querySelectorAll(".send-email form input")
+        //
       emailjs.sendForm('service_4uuuuvg', 'template_rdpt1uj', form.current, 'L_HXR6PHafDM1aQ8B')
         .then((result) => {
             console.log(result.text);
@@ -18,6 +21,7 @@ function Contact(){
         }, (error) => {
             console.log(error.text);
         });
+        
     };
     return(
             <div className="contact-container container">
