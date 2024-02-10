@@ -6,23 +6,44 @@ import emailjs from '@emailjs/browser';
 
 import './contact.css'
 function Contact(){
-  
     const form = useRef();
-
     const sendEmail = (e) => {
         e.preventDefault();
-        //
         const input = document.querySelectorAll(".send-email form input")
-        //
-      emailjs.sendForm('service_4uuuuvg', 'template_rdpt1uj', form.current, 'L_HXR6PHafDM1aQ8B')
-        .then((result) => {
-            console.log(result.text);
-            e.target.reset()
-        }, (error) => {
-            console.log(error.text);
-        });
-        
+        input.forEach((el)=>{
+            const emptyMassage= document.querySelector(".empty-massage")
+            if(el.value===""){
+                el.style.border="2px solid red"
+                emptyMassage.style.display="block"
+            }
+            else{
+                emailjs.sendForm('service_4uuuuvg', 'template_rdpt1uj', form.current, 'L_HXR6PHafDM1aQ8B')
+                .then((result) => {
+                    console.log(result.text);
+                    e.target.reset()
+                }, (error) => {
+                    console.log(error.text);
+                });
+                
+            }
+        })
     };
+
+    // const sendEmail = (e) => {
+    //     e.preventDefault();
+    //     //
+    //     const input = document.querySelectorAll(".send-email form input")
+    //     //
+        
+    //   emailjs.sendForm('service_4uuuuvg', 'template_rdpt1uj', form.current, 'L_HXR6PHafDM1aQ8B')
+    //     .then((result) => {
+    //         console.log(result.text);
+    //         e.target.reset()
+    //     }, (error) => {
+    //         console.log(error.text);
+    //     });
+        
+    // };
     return(
             <div className="contact-container container">
                 <div className="contact-mazen row">
@@ -60,6 +81,7 @@ function Contact(){
                         <input placeholder="subject" name="subject" type="text"></input>
                         <textarea placeholder="Massage" name="message"  className="massege" type="text"></textarea>
                         <input  type="submit" value="Send" ></input>
+                        <h3 className="empty-massage">! we can t send your massege empty</h3>
                     </form>
                     </div>
                 </div>

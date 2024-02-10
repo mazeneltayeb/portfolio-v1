@@ -88,6 +88,10 @@ height: 100%;
     top: 28px;
     left: -22px;
 }
+.empty-massage{
+  color: red;
+  display: none;
+}
 
   .send-email form{
     width: 90%;
