@@ -142,39 +142,50 @@ height: 100%;
   }
 
 .send-success{
-  background-color: #4CAF50;
-  color: white;
-  padding: 3px;
+  background-color: white;
+  color: black;
+  padding: 5px;
   position: fixed;
-  width: 260px;
+  width: 275px;
   left: 50%;
   transform: translateX(-50%);
   top: 15%;
   z-index: 999999999999;
   display: none;
+ font-size: 14px;
+ box-shadow: 0px 1px 20px 9px var(--navy-blue);
+}
+.send-success p{
+  margin-bottom: 0;
+  margin-left: 8px;
 }
 .send-success div{
   display: flex;
-  justify-content: space-between;
+  justify-content:center;
   align-items: center;
 }
 
 .send-field{
-  background-color: red;
-  color: white;
-  padding: 3px;
+  background-color: white;
+  color: black;
+  padding: 5px;
   position: fixed;
-  width: 260px;
+  width: 220px;
   left: 50%;
   transform: translateX(-50%);
   top: 15%;
   z-index: 999999999999;
+ font-size: 14px;
+ box-shadow: 0px 1px 20px 9px var(--navy-blue);
   display: none;
 }
-
+.send-field p{
+  margin-bottom: 0;
+  margin-left: 8px;
+}
 .send-field div{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
   @media (width<768px) {
@@ -245,119 +256,3 @@ margin-top: var(--margin-md);
   }
  
   }
-  /* .contact-info{
-    background-color: var(--dark-blue);
-    box-shadow: inset 0px 1px 20px 10px rgb(35 204 187 / 26%);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-  }
-.contact-container h1{
-        color: white;
-        position: relative;
-        margin-bottom: 50px;
-  }
-.contact-container h1::before{
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 4px;
-    background-color: var(--green-color);
-    bottom: -13px;
-    border-radius: 10px;
-    left: 12px;
-  }
-
-.email, .call, .location{
-    display: flex;
-    justify-content: space-between;
-}
-.contact-info .icon{
-    border: 1px solid var(--green-color)  ;
-    padding: 5px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.contact-info .icon svg{
-    color: var(--green-color) !important;
-}
-.contact-info .icon:hover{
-  background-color: var(--green-color) !important;
-}
-.contact-info .icon:hover svg{
-color: white !important;
-}
-.info{
-   color: white;
-    width: 230px;
-    margin-left: 10px;
-}
-.map{
-    width:250px ;
-    height: 350px;
-    margin-top: 25px;
-}
-.map iframe{
-    width:100% ;
-    height: 100%;
-    border-radius:10px ;
-} */
-/* ////// End Left //////// */
-/* .send-email{
-  width:600px ;
-  background-color: var(--dark-blue);
-  padding:25px;
-  border-radius: 15px;
-  box-shadow: inset 0px 1px 20px 10px rgb(35 204 187 / 26%);
-}
-.send-email form{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width:100% ;
-
-}
-.send-email form input ,.send-email form textarea{
-  height: 50px;
-  width: 100%;
-  margin-bottom: 20px;
-  border-radius: 15px;
-  padding: 10px;
-
-}
-.send-email form input:focus{
-  border: none;
-  outline: none;
-}
-.send-email form textarea:focus{
-  outline: solid 3px var(--green-color);
-}
-.send-email form .massege{
-  height: 300px;
- 
-}
-
-.send-email form  input[type="submit"]{
-background-color: var(--green-color);
-color: white ;
-box-shadow: 1px 1px 13px 3px rgb(35 204 187 / 68%);
-}
-.social-media a:hover{
-  background-color: var(--green-colot);
-} */
-/* @media (max-width:980px) {
-  .contact-info{
-    margin-bottom: 30px;
-    width: 100%;
-  }
-  .map{
-    width: 100%;
-  }
-} */

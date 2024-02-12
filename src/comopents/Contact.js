@@ -3,65 +3,31 @@ import { IoCall,IoLocationSharp  } from "react-icons/io5";
 import SocialMedia from "./SocialMedia";
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { FaCheck } from "react-icons/fa";
+import { IoCheckmarkCircleSharp } from "react-icons/io5";
+
 import { ImCross } from "react-icons/im";
 
 import './contact.css'
 function Contact(){
     const form = useRef();
-    // const sendEmail = (e) => {
-    //     e.preventDefault();
-    //     const input = document.querySelectorAll(".send-email form input")
-    //     input.forEach((el)=>{
-       
-    //         const emptyMassage= document.querySelector(".empty-massage") 
-    //         if(el.value==""){
-    //             el.style.border="2px solid red"
-    //             emptyMassage.style.display="block"
-                
-    //         }
-    //         else{
-    //             emailjs.sendForm('service_4uuuuvg', 'template_rdpt1uj', form.current, 'L_HXR6PHafDM1aQ8B')
-    //             .then((result) => {
-    //                 console.log(result.text);
-    //                 e.target.reset()
-    //             }, (error) => {
-    //                 console.log(error.text);
-    //             });
-    //             el.style.border="2px solid white"
-    //             emptyMassage.style.display="none"
-    //         }
-    //     })
-    // };
-
-    // const sendEmail = (e) => {
-    //     e.preventDefault();
-    //   emailjs.sendForm('service_4uuuuvg', 'template_rdpt1uj', form.current, 'L_HXR6PHafDM1aQ8B')
-    //     .then((result) => {
-    //         console.log(result.text);
-    //         e.target.reset()
-    //     }, (error) => {
-    //         console.log(error.text);
-    //     });
-        
-    // };
-
-
-
     const sendEmail = (e) => {
         e.preventDefault();
-      emailjs.sendForm('service_4uuuuvg', 'template_rdpt1uj', form.current, 'L_HXR6PHafDM1aQ8B')
+      emailjs.sendForm('service_6v94fip', 'template_23b78as', form.current, 'POU1icYMEIuLsr_sB')
         .then((result) => {
             const sendSuccess= document.querySelector(".send-success")
             sendSuccess.style.display="block"
-            sendSuccess.style.display="none"
-
+            setTimeout(()=>{
+                sendSuccess.style.display="none"
+ 
+            },10000)
             console.log(result.text);
             e.target.reset()
         }, (error) => {
             const sendField=document.querySelector(".send-field")
             sendField.style.display="block"
-            sendField.style.display="none"
+            setTimeout(()=>{
+                sendField.style.display="none" 
+            },10000)
             console.log(error.text);
         });
         
@@ -69,11 +35,11 @@ function Contact(){
     return(
         <>
           <span className="send-success"> <div>
-          <FaCheck size="1rem"/> <h6>Your Massage Sended Sucsisfuly</h6> 
+          <IoCheckmarkCircleSharp size="1rem" color="#4CAF50" /><p>Your massage was send succuessfully</p> 
             </div>
         </span>
           <span className="send-field">
-             <div> <ImCross /><h6>Your Massage Sended not</h6></div> 
+             <div> <ImCross color="red" /><p>Your message was not sent</p></div> 
              </span>
             <div className="contact-container container">
                 <div className="contact-mazen row">
