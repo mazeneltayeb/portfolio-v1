@@ -21,7 +21,6 @@ function NavBar(){
 
 
   function removeTeggoler(){
-    // document.querySelector("ul .active").classList.remove("active")
     setActiveTog(!activeTog)
   
     const navLink = document.querySelectorAll("ul .il-container .nav-link")
@@ -59,7 +58,7 @@ scrollerY.style.width= `${scrollTop / heigth * 100 }%`
                     <Link onClick={removeTeggoler} className='nav-link'  to="/education">Education</Link>
                     <Link onClick={removeTeggoler} className='nav-link'  to="/skills">Skills</Link>
                     <Link onClick={removeTeggoler} className='nav-link'  to="/project">Project</Link>
-                    <Link onClick={removeTeggoler} className='nav-link'  to="/contact">Contoct</Link>
+                    <Link onClick={removeTeggoler} className='nav-link'  to="/contact">Contact</Link>
                   </Nav>
                 </ul>
               </Container>

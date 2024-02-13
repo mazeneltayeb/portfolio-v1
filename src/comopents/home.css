@@ -153,6 +153,19 @@ border: 0 !important;
         bottom: 30px ;
     }
 }
+@media (width<460px){
+    .my-name .card-title{
+        font-size: 25px !important;
+    }
+}
+@media (width<383px){
+    .my-name .card-title{
+        font-size: 18px !important;
+    }
+    .home .main-description .card-subtitle{
+        font-size: 18px;
+    }
+}
 @media (width<445px) {
     .home .main-img {
         width: 73%;
@@ -163,6 +176,7 @@ border: 0 !important;
         top: 16px;
         right: -4px;
     }
+   
 }
 @media (width<401px) {
     .home .prsonal-img::before {
@@ -179,10 +193,7 @@ border: 0 !important;
     .home .prsonal-img::before {
         height: 94%;
     }
-    .social-media-home{
-        /* width: 225px;
-        margin-left:-20px; */
-    }
+
     .social-media a{
         width: 40px !important;
         height: 40px !important;
