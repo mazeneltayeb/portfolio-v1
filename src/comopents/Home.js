@@ -42,7 +42,7 @@ return(
                 I have learned in order to build websites that are more responsive and have their own character
         </Card.Text>
         <div className="card-buttom-container">
-        <a className="resume" target="_blank" href="https://drive.google.com/file/d/1SpNT1xJVu_2zPiFbSjqbUr4a3ZcjkAIR/view?usp=drive_link" >Resume <FaArrowUpRightFromSquare /> </a>
+        <a className="resume" target="_blank" href="https://mazeneltayebcv.netlify.app/" >Resume <FaArrowUpRightFromSquare /> </a>
         </div>
           <div className="social-media-home">
             <SocialMedia />
