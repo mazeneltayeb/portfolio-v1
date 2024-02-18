@@ -35,5 +35,14 @@
         "link":"mazen-eltayeb.netlify.app",
         "githup":"https://github.com/mazeneltayeb/portfolio-v1",
         "description":"Design By Using: CSS, JavaScript, React.js"
-        }
+        },
+    {
+    "id":5,
+    "title":"Managa",
+    "category":"javascript",
+    "image":"https://i.postimg.cc/HxqV4kv3/Screenshot-10.png'" ,
+    "link":"https://manage-managa-page-landing.netlify.app/",
+    "githup":"https://github.com/mazeneltayeb/manage-landing-page-master",
+    "description":"Design By Using: HTML, CSS, JavaScript"
+    }
 ]

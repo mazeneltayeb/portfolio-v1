@@ -75,7 +75,7 @@ export function Javascript(){
       if(project.category === "javascript"){
         return(
     <Card className=' col-lg-3 col-md-6 col-sm-6'   key={project.id} >
-    <Card.Img variant="top" src={project.image} />
+    <Card.Img variant="top"  src={project.image} />
     <Card.Body>
       <Card.Title>{project.title}</Card.Title>
       <Card.Text>
