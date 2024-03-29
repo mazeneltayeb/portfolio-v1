@@ -18,7 +18,7 @@ function Skills(){
             }
         })  
 return(
-        <div className="skill-button-rate-contaier p-5">
+        <div className="skill-button-rate-contaier ">
         <div className="button-skill">
         <div onClick={()=>setRateskill(<FrontEnd />)} className="front-end"   >Front-End</div>
         <div onClick={()=>setRateskill(<Tools/>)} className="tool">Tools</div>

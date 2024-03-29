@@ -1,12 +1,10 @@
 
-
-
 import "./project.css"
 import { AllProject,Bootestrap,Javascript, React } from "./ProjectCard";
 import { useState } from "react";
+
 function Project (){
     const [project,setProject]=useState(<AllProject/>)
-
     const activeButtom = document.querySelectorAll(".project-title div")
     activeButtom.forEach((e)=>{
         e.onclick=function(){

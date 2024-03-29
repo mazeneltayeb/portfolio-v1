@@ -44,5 +44,14 @@
     "link":"https://manage-managa-page-landing.netlify.app/",
     "githup":"https://github.com/mazeneltayeb/manage-landing-page-master",
     "description":"Design By Using: HTML, CSS, JavaScript"
-    }
+    },
+    {
+        "id":6,
+        "title":"Oxygen-gym",
+        "category":"react",
+        "image":"https://i.postimg.cc/cHzHBB06/Screenshot-32.png" ,
+        "link":"https://oxygen-gym-ismailia.netlify.app/",
+        "githup":"https://github.com/mazeneltayeb/oxygen-gym",
+        "description":"Design By Using: CSS, React.js,Framer Motion"
+        }
 ]

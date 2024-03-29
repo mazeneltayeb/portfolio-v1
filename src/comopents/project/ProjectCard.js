@@ -20,12 +20,12 @@ export function AllProject(){
             {project.description}
             </Card.Text>
             <div className='buttom'>
-      <Button href={project.githup}  target="_blank" variant="primary">
-      <FaGithub />
-      </Button>
-      <Button href={project.link}  target="_blank" variant="primary">
-      <BsBrowserChrome />
-      </Button>
+          <Button href={project.githup}  target="_blank" variant="primary">
+          <FaGithub />
+          </Button>
+          <Button href={project.link}  target="_blank" variant="primary">
+          <BsBrowserChrome />
+          </Button>
       </div>
           </Card.Body>
         </Card>

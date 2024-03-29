@@ -11,24 +11,44 @@
     justify-content:space-between;
     align-items: center;
     flex-wrap: wrap-reverse;
-    height: 100vh;
+    /* height: 100vh; */
+    height: 60dvh;
+    margin: 20px 5px;
+  }
+@media (height < 970px) {
+  .skill-button-rate-contaier{
+    height: 70dvh;
+  }
+}
+@media (height < 830px) {
+  .skill-button-rate-contaier{
+    height: 80dvh;
+  }
+}
+@media (height < 720px) {
+  .skill-button-rate-contaier{
+    height: 100dvh;
   }
 
+}
   .skill-button-rate-contaier .button-skill{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width:400px;
+    /* width:400px; */
+    width: 100dvw;
     flex-wrap: wrap;
     align-content: space-between;
     height: 150px;
+    margin-top: 20px;
   }
   .skill-button-rate-contaier .button-skill div{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: calc(90% /2);
+    /* width: calc(90% /2); */
+    width:calc(90% / 4);
     color: white;
     border: 1px solid var(--green-color);
     padding: 20px;
@@ -58,9 +78,9 @@ justify-content: space-evenly;
 
 }
 @media (max-width:896px) {
-  .rate-Skill-container{
+  /* .rate-Skill-container{
     width: 700px;
-  }
+  } */
   .skill-button-rate-contaier{
    justify-items: center;
    
@@ -72,18 +92,27 @@ justify-content: space-evenly;
   }
 
 }
-@media (max-width:725px) {
-  .rate-Skill-container{
-    width: 500px;
-  }}
-  @media (max-width:550px) {
-    .rate-Skill-container{
-      width: 400px;
-    }}
-@media (max-width:420px) {
-  .rate-Skill-container{
-    width: 300px;
+@media (width > 768px) {
+  .skill-button-rate-contaier .button-skill {
+    width: 100dvw;
+
   }
+}
+@media (width > 570px) {
+  .skill-button-rate-contaier .button-skill {
+    width: 100dvw;
+
+  }
+}
+
+@media (width < 768px) {
+  .skill-button-rate-contaier .button-skill div{
+    width: calc(90% /2);
+ }
+
+  }
+
+@media (max-width:420px) {
   .skill-button-rate-contaier .button-skill{
      margin-top: 15px;
     justify-content: space-between;
