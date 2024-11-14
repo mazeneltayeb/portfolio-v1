@@ -2,56 +2,66 @@
 [
     {
         "id":1,
-    "title":"Bondi",
-    "image": "https://i.ibb.co/r5ZQTLL/Screenshot-5.png",
-    "category":"bootstrap",
-    "link":"https://fabulous-seahorse-d53d9c.netlify.app",
-    "githup":"https://github.com/mazeneltayeb/bondi.git",
-    "description":"Design By Using: HTML, CSS, Bootstrap"
-    },
-    {
-        "id":2,
-    "title":"To Do List",
-    "category":"javascript",
-    "image": "https://i.ibb.co/ByH8s4f/Screenshot-4.png" ,
-    "link":"https://mellow-eclair-820e4d.netlify.app",
-    "githup":"https://github.com/mazeneltayeb/ToDoList.git",
-    "description":"Design By Using: HTML, CSS, JavaScript"
-    },
-    {
-    "id":3,
-    "title":"Calculator",
-    "category":"javascript",
-    "image":"https://i.ibb.co/M7S9Y1x/Screenshot-6.png" ,
-    "link":"https://polite-tartufo-015717.netlify.app/",
-    "githup":"https://github.com/mazeneltayeb/Calculator.git",
-    "description":"Design By Using: HTML, CSS, JavaScript"
-    },
-    {
-        "id":4,
+        "title":"Managa",
+        "category":"javascript",
+        "image":"https://i.postimg.cc/HxqV4kv3/Screenshot-10.png'" ,
+        "link":"https://manage-managa-page-landing.netlify.app/",
+        "githup":"https://github.com/mazeneltayeb/manage-landing-page-master",
+        "description":"Design By Using: HTML, CSS, JavaScript"
+        },
+        {
+            "id":2,
+            "title":"Oxygen-gym",
+            "category":"react",
+            "image":"https://i.postimg.cc/cHzHBB06/Screenshot-32.png" ,
+            "link":"https://oxygengym-ismailia.netlify.app/",
+            "githup":"https://github.com/mazeneltayeb/oxygengym",
+            "description":"Design By Using: CSS, React.js,Framer Motion"
+            },
+        {
+         "id":3,
+         "title":"Castle Furniture",
+         "category":"react",
+         "image":"https://i.postimg.cc/y806mQpn/Screenshot-213.png" ,
+         "link":"https://castlefurnitureegyptco.netlify.app/",
+         "githup":"https://github.com/mazeneltayeb/castlev2",
+         "description":"Design By Using: CSS, React.js, Html"
+         },
+        {
+                "id":4,
+            "title":"Bondi",
+            "image": "https://i.ibb.co/r5ZQTLL/Screenshot-5.png",
+            "category":"bootstrap",
+            "link":"https://fabulous-seahorse-d53d9c.netlify.app",
+            "githup":"https://github.com/mazeneltayeb/bondi.git",
+            "description":"Design By Using: HTML, CSS, Bootstrap"
+        },
+        {
+            "id":5,
+        "title":"To Do List",
+        "category":"javascript",
+        "image": "https://i.ibb.co/ByH8s4f/Screenshot-4.png" ,
+        "link":"https://mellow-eclair-820e4d.netlify.app",
+        "githup":"https://github.com/mazeneltayeb/ToDoList.git",
+        "description":"Design By Using: HTML, CSS, JavaScript"
+        },
+        {
+            "id":6,
+            "title":"Calculator",
+            "category":"javascript",
+            "image":"https://i.ibb.co/M7S9Y1x/Screenshot-6.png" ,
+            "link":"https://polite-tartufo-015717.netlify.app/",
+            "githup":"https://github.com/mazeneltayeb/Calculator.git",
+            "description":"Design By Using: HTML, CSS, JavaScript"
+        },
+       {
+        "id":7,
         "title":"Portiflio",
         "category":"react",
         "image":"https://i.postimg.cc/3wcywNkt/Screenshot-8.png" ,
         "link":"mazen-eltayeb.netlify.app",
         "githup":"https://github.com/mazeneltayeb/portfolio-v1",
         "description":"Design By Using: CSS, JavaScript, React.js"
-        },
-    {
-    "id":5,
-    "title":"Managa",
-    "category":"javascript",
-    "image":"https://i.postimg.cc/HxqV4kv3/Screenshot-10.png'" ,
-    "link":"https://manage-managa-page-landing.netlify.app/",
-    "githup":"https://github.com/mazeneltayeb/manage-landing-page-master",
-    "description":"Design By Using: HTML, CSS, JavaScript"
-    },
-    {
-        "id":6,
-        "title":"Oxygen-gym",
-        "category":"react",
-        "image":"https://i.postimg.cc/cHzHBB06/Screenshot-32.png" ,
-        "link":"https://oxygen-gym-ismailia.netlify.app/",
-        "githup":"https://github.com/mazeneltayeb/oxygen-gym",
-        "description":"Design By Using: CSS, React.js,Framer Motion"
         }
+ 
 ]
